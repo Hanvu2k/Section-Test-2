@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Instrument Serif", serif;
+}
+
+:root {
+  --line: #f3eae5;
+  --primary: #462b20;
+  --secondary: #42291fd9;
+}
+
+.section-container {
+  width: 1920px;
+  height: 1260px;
+  position: relative;
+  color: var(--primary);
+}
+
+.section-title h2 {
+  position: relative;
+  top: 66px;
+  left: 824px;
+  font-size: 58px;
+  line-height: 61px;
+  font-weight: 400;
+}
+
+.section-content__left {
+  position: absolute;
+  top: 257px;
+  left: 242px;
+  width: 560px;
+  display: grid;
+  gap: 24px;
+}
+
+.section-content__left .content-img {
+  width: 560px;
+  height: 315px;
+}
+
+.section-content__left .content-img .content-img__link {
+  width: 100%;
+  height: 100%;
+}
+
+.content-items {
+  display: grid;
+  gap: 20px;
+}
+
+.content-item {
+  display: grid;
+  gap: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.content-item-head {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 17px;
+}
+
+.content-item-head .content-item-title h4 {
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.content-item-description {
+  width: 499px;
+  font-size: 15px;
+  line-height: 23px;
+  font-family: "Inter", sans-serif;
+  color: var(--secondary);
+}
+
+.hidden {
+  display: none !important;
+}
+
+/*  */
+.section-content__right {
+  width: 706px;
+  height: 991px;
+  position: absolute;
+  left: 919px;
+  top: 203px;
+}

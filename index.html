@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="section-container">
+      <div class="section-title">
+        <h2>Floral & Decor</h2>
+      </div>
+      <div class="section-content__left">
+        <div class="content-img">
+          <img
+            class="content-img__link"
+            src="images/Rectangle 75.png"
+            alt="wedding-img"
+          />
+        </div>
+        <div class="content-items">
+          <div class="content-item">
+            <div class="content-item-head">
+              <div class="content-item-title">
+                <h4>Floral</h4>
+              </div>
+              <div class="btn"><img src="images/Vector.png" alt="arrow" /></div>
+            </div>
+            <div class="content-item-description">
+              The Design is the imagination, creativity and inspiration that
+              makes your event unique. We work closely with you to sleuth out
+              your style and then use that insight to develop every aesthetic
+              component of your event from stationery and lighting to flowers
+              and furniture.
+            </div>
+          </div>
+          <div class="content-item">
+            <div class="content-item-head">
+              <div class="content-item-title">
+                <h4>Decor selection</h4>
+              </div>
+              <div><img src="images/Vector.png" alt="arrow" /></div>
+            </div>
+            <div class="content-item-description hidden">
+              The Design is the imagination, creativity and inspiration that
+              makes your event unique. We work closely with you to sleuth out
+              your style and then use that insight to develop every aesthetic
+              component of your event from stationery and lighting to flowers
+              and furniture.
+            </div>
+          </div>
+          <div class="content-item">
+            <div class="content-item-head">
+              <div class="content-item-title">
+                <h4>Hair & makeup</h4>
+              </div>
+              <div><img src="images/Vector.png" alt="arrow" /></div>
+            </div>
+            <div class="content-item-description hidden">
+              The Design is the imagination, creativity and inspiration that
+              makes your event unique. We work closely with you to sleuth out
+              your style and then use that insight to develop every aesthetic
+              component of your event from stationery and lighting to flowers
+              and furniture.
+            </div>
+          </div>
+          <div class="content-item">
+            <div class="content-item-head">
+              <div class="content-item-title">
+                <h4>Lighting & Sound</h4>
+              </div>
+              <div><img src="images/Vector.png" alt="arrow" /></div>
+            </div>
+            <div class="content-item-description hidden">
+              The Design is the imagination, creativity and inspiration that
+              makes your event unique. We work closely with you to sleuth out
+              your style and then use that insight to develop every aesthetic
+              component of your event from stationery and lighting to flowers
+              and furniture.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-content__right">
+        <div class="">
+          <img src="images/Rectangle 74.png" alt="table-decor" />
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    // get  all content-item
+    const contentItems = document.querySelectorAll(".content-item");
+
+    // loop content items and add a class toggle function
+    contentItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        if (
+          item
+            .querySelector(".content-item-description")
+            .classList.contains("hidden")
+        ) {
+          item
+            .querySelector(".content-item-description")
+            .classList.remove("hidden");
+        } else {
+          item
+            .querySelector(".content-item-description")
+            .classList.add("hidden");
+        }
+      });
+    });
+  </script>
+</html>
